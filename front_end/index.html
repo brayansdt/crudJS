@@ -1,15 +1,18 @@
 <html ng-app="AngularPoc">
     <head>
+        <!-- Css -->
         <link rel="stylesheet"  media="all" type="text/css" href="css/styles.css" />
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+        
+        <!-- libs -->
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-route/angular-route.min.js"></script>
-        
-        <script src="js/controller/FooController.js"></script>
-        <script src="js/controller/TestController.js"></script>
+                
+        <!-- controllers -->
         <script src="js/controller/MauricioController.js"></script>
         <script src="js/controller/GabrielController.js"></script>
         
+        <!-- routers -->
         <script src="js/router/Router.js"></script>
     </head>
     
@@ -17,19 +20,13 @@
     
    <header>
    		<h1>Angular JS - Testes</h1>
-		<ul class="menu">
-			<li>
-				<a href="#/foo">FooController</a>
-			</li>
-			<li>
-				<a href="#/test">TestController</a>
-			</li>
+		<ul class="menu">			
 			<li>
 				<a href="#/gabriel">GabrielController</a>
 			</li>
 			<li>
-					<a href="#/mauricio">Mauricio controller</a>
-				</li>
+                <a href="#/mauricio">Mauricio controller</a>
+            </li>
 		</ul>
 	</header>
 
