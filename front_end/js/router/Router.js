@@ -9,9 +9,15 @@ angular.module('AngularPoc', ['ngRoute']).config(function($routeProvider){
         templateUrl: 'templates/testController.html'
     });  
 	
+	/*Rotas Mauricio*/
 	$routeProvider.when('/mauricio',{
         controller: MauricioController,
-        templateUrl: 'templates/mauricio.html'
+        templateUrl: 'templates/mauricio/mauricio.html'
+    });
+	
+	$routeProvider.when('/mauricio/cadastrarFrutas',{
+        controller: MauricioController,
+        templateUrl: 'templates/mauricio/cadastrarFrutas.html'
     });
     
     $routeProvider.when('/gabriel',{
