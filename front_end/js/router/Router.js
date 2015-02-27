@@ -1,21 +1,12 @@
-angular.module('AngularPoc', ['ngRoute']).config(function($routeProvider){    
-    $routeProvider.when('/foo',{
-        controller: FooController,
-        templateUrl: 'templates/fooController.html'
+angular.module('AngularPoc', ['ngRoute']).config(function ($routeProvider) {
+    'use strict';
+	$routeProvider.when('/mauricio', {
+        controller : MauricioController,
+        templateUrl : 'templates/mauricio.html'
     });
     
-    $routeProvider.when('/test',{
-        controller: TestController,
-        templateUrl: 'templates/testController.html'
-    });  
-	
-	$routeProvider.when('/mauricio',{
-        controller: MauricioController,
-        templateUrl: 'templates/mauricio.html'
+    $routeProvider.when('/gabriel', {
+        controller : GabrielController,
+        templateUrl : 'templates/gabrielController.html'
     });
-    
-    $routeProvider.when('/gabriel',{
-        controller: GabrielController,
-        templateUrl: 'templates/gabrielController.html' 
-    })
 });
