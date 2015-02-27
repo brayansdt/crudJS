@@ -6,17 +6,31 @@
 }
 body{
 	width: 100%;
+	background-image: url('../images/ps_neutral_@2X.png');
 }
-header, .content {
+header h1{
+	font-family: 'Nova Square', cursive;
+	text-align: center;
+	margin-top: 10px;
+	color: #656565;
+}
+
+header, #content {
 	width: auto;
 	margin: 0 auto;
 	max-width: 1280px;
 	
 }
 
+#content{
+	padding: 15px;
+	background-color: #fff;
+	box-sizing: border-box
+}
+
 header ul.menu{
 	height: 35px;
-	background-color: #ccc;
+	background-color: #16a085;
 	margin-top: 25px;
 }
 
@@ -24,7 +38,7 @@ header  ul.menu li{
 	float: left;
 	position: relative;
 	border-left: dashed 1px #fff;
-	border-right: dashed 1px #cfcfcf;
+	border-right: dashed 1px #8daaa5;
 	height: 35px;
 	width: 150px;
 	text-align: center;
@@ -36,12 +50,12 @@ header  ul.menu li a{
 	text-decoration: none;
 	height: 35px;
 	width: 150px;
-	color: #333;
+	color: #fff;
 }
 
 header  ul.menu li a:hover{
 	background-color: #fff;
-	color: #999;
+	color: #16a085;
 	border-radius: 3px;
 	padding: 2px;
 }
