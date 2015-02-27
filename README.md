@@ -1,4 +1,5 @@
-# crudJS
-Angular+node.js+rethinkdb studies
+# crudJS 
+# Study purpose only!!
+Angular+node.js+Rethinkdb studies
 
 Simple repository to study Angular, Node and rethinkDB.
