@@ -10,4 +10,4 @@ function FooController($scope) {
 }
 
 //geting angular module
-angular.module('AngularPoc',[]).controller('FooController', ['$scope', FooController]);
+angular.module('AngularPoc',[]).controller('FooController', ['$scope', FooController]); 

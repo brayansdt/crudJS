@@ -7,5 +7,10 @@ angular.module('AngularPoc', ['ngRoute']).config(function($routeProvider){
     $routeProvider.when('/test',{
         controller: TestController,
         templateUrl: 'templates/testController.html'
+    });  
+	
+	$routeProvider.when('/mauricio',{
+        controller: MauricioController,
+        templateUrl: 'templates/mauricio.html'
     });
 });
