@@ -11,22 +11,28 @@
         
         <script src="js/router/Router.js"></script>
     </head>
-    <ul>
-        <li>
-            <a href="#/foo">FooController</a>
-        </li>
-        <li>
-            <a href="#/test">TestController</a>
-        </li>
-        <li>
-            <a href="#/gabriel">GabrielController</a>
-        </li>
-        <li>
-				<a href="#/mauricio">Mauricio controller</a>
+    
+    <body>
+    
+   <header>
+		<ul class="menu">
+			<li>
+				<a href="#/foo">FooController</a>
 			</li>
-    </ul>
+			<li>
+				<a href="#/test">TestController</a>
+			</li>
+			<li>
+				<a href="#/gabriel">GabrielController</a>
+			</li>
+			<li>
+					<a href="#/mauricio">Mauricio controller</a>
+				</li>
+		</ul>
+	</header>
 
-    
-    <div ng-view></div>
-    
+	<div class="content">
+		<div ng-view ></div>
+   	</div>
+    </body>
 </html>

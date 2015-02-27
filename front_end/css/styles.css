@@ -2,4 +2,46 @@
 	padding: 0px;
 	margin : 0px;	
 	list-style-type: none;
+	font-family: "Trebuchet Ms";
+}
+body{
+	width: 100%;
+}
+header, .content {
+	width: auto;
+	margin: 0 auto;
+	max-width: 1280px;
+	
+}
+
+header ul.menu{
+	height: 35px;
+	background-color: #ccc;
+	margin-top: 25px;
+}
+
+header  ul.menu li{
+	float: left;
+	position: relative;
+	border-left: dashed 1px #fff;
+	border-right: dashed 1px #cfcfcf;
+	height: 35px;
+	width: 150px;
+	text-align: center;
+	line-height: 35px;
+	
+}
+
+header  ul.menu li a{
+	text-decoration: none;
+	height: 35px;
+	width: 150px;
+	color: #333;
+}
+
+header  ul.menu li a:hover{
+	background-color: #fff;
+	color: #999;
+	border-radius: 3px;
+	padding: 2px;
 }
