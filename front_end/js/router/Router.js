@@ -8,4 +8,9 @@ angular.module('AngularPoc', ['ngRoute']).config(function($routeProvider){
         controller: TestController,
         templateUrl: 'templates/testController.html'
     });
+    
+    $routeProvider.when('/gabriel',{
+        controller: GabrielController,
+        templateUrl: 'templates/gabrielController.html' 
+    })
 });
