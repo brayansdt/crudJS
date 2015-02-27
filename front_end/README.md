@@ -5,3 +5,4 @@ Remember to install dependencies before running project:
 
 To start a server, use:
 >node server.js
+*Server is started in "localhost:8007"
