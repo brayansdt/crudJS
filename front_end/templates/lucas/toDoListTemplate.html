@@ -2,7 +2,8 @@
 <div ng-repeat="todo in todos">
     <input type="checkbox" ng-model="todo.done"/>
     <input type="text" ng-model="todo.text"/>
-    <a href="" ng-click="move($index)">Down</a>
+    <a href="" ng-click="move($index,'down')">Down</a>
+    <a href="" ng-click="move($index,'up')">Up</a>
     <a href="" ng-click="removeTodo($index)">Remove</a>
     <!-- print index of elements -->
     {{ $index }}

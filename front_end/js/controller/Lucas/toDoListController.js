@@ -50,13 +50,25 @@ function TodoCtrl($scope) {
         */
         $scope.todos.splice(start, 1);
     };
-    
+
     // Function to move an item
-    $scope.move = function (index) {
-        if (index === $scope.todos.length - 1) {
-            return;
+    $scope.move = function (index, direction) {
+
+        // Handle moving up
+        if (direction === 'up') {
+            if (index === 0) {
+                return;
+            }
+            index = index - 1;
         }
         
+        // Handle moving down
+        if (direction === 'down') {
+            if (index === $scope.todos.length - 1) {
+                return;
+            }
+        }
+
         var todo = $scope.todos[index];
         /**
         * index + 2 = my item destination.
@@ -65,5 +77,6 @@ function TodoCtrl($scope) {
         */
         $scope.todos.splice(index + 2, 0, todo);
         $scope.todos.splice(index, 1);
+
     };
 }
