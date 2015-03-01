@@ -11,7 +11,7 @@
  */
 function TodoCtrl($scope) {
     'use strict';
-    
+
     /*
     * Create my first two 'To Do´s'.
     * Done: for checkbox, if true, checkbox will be checked.
@@ -26,11 +26,19 @@ function TodoCtrl($scope) {
     * Add a new ToDo after submit form, very simple and fun :)
     */
     $scope.addTodo = function () {
+        /*
+        * Weel, it say´s how will be my new item. It´ll start unchecked and with 
+        * my todoText as it´s value.
+        */
         var newTodo = {
             done: false,
             text: $scope.todoText
         };
-        
+
+        //In fact, this line push a newTodo on my 'To Do list' ;-)
         $scope.todos.push(newTodo);
+        
+        // Clear the input of new 'to do item' after submit. (Cool!)
+        $scope.todoText = '';
     };
 }
