@@ -1,4 +1,11 @@
+<!-- List all To Do´s -->
 <div ng-repeat="todo in todos">
     <input type="checkbox" ng-model="todo.done"/>
     <input type="text" ng-model="todo.text"/>
 </div>
+
+<!-- Add a new To Do item on list above -->
+<form ng-submit="addTodo()">
+    <input type="text" ng-model="todoText"/>
+    <input type="submit"/>
+</form>
