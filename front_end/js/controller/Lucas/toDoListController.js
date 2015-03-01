@@ -13,7 +13,7 @@ function TodoCtrl($scope) {
     'use strict';
 
     /*
-    * Create my first two 'To Do´s'.
+    * Create my first two 'To Do´s' (initialize list of todos).
     * Done: for checkbox, if true, checkbox will be checked.
     * text: my todo description.
     */
@@ -37,8 +37,33 @@ function TodoCtrl($scope) {
 
         //In fact, this line push a newTodo on my 'To Do list' ;-)
         $scope.todos.push(newTodo);
-        
+
         // Clear the input of new 'to do item' after submit. (Cool!)
         $scope.todoText = '';
+    };
+
+    // Remove a todo item
+    $scope.removeTodo = function (start) {
+        /*
+        * 'splice' in javascript receive a start position and the number of elements to remove.
+        * We´ll aways delete one, becouse we have only one item in each line.
+        */
+        $scope.todos.splice(start, 1);
+    };
+    
+    // Function to move an item
+    $scope.move = function (index) {
+        if (index === $scope.todos.length - 1) {
+            return;
+        }
+        
+        var todo = $scope.todos[index];
+        /**
+        * index + 2 = my item destination.
+        * 0 = number of items that I want to remove, anything.
+        * todo = my item, to add on destination.
+        */
+        $scope.todos.splice(index + 2, 0, todo);
+        $scope.todos.splice(index, 1);
     };
 }
