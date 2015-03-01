@@ -3,35 +3,39 @@
         <!-- Css -->
         <link rel="stylesheet"  media="all" type="text/css" href="css/styles.css" />
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
-        
+
         <!-- libs -->
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-route/angular-route.min.js"></script>
-                
+
         <!-- controllers -->
-        <script src="js/controller/MauricioController.js"></script>
-        <script src="js/controller/GabrielController.js"></script>
-        
+        <script src="js/controller/Mauricio/MauricioController.js"></script>
+        <script src="js/controller/Gabriel/GabrielController.js"></script>
+        <script src="js/controller/Lucas/toDoListController.js"></script>
+
         <!-- routers -->
         <script src="js/router/Router.js"></script>
     </head>
-    
-    <body>
-    
-   <header>
-   		<h1>Angular JS - Testes</h1>
-		<ul class="menu">			
-			<li>
-				<a href="#/gabriel">GabrielController</a>
-			</li>
-			<li>
-                <a href="#/mauricio">Mauricio controller</a>
-            </li>
-		</ul>
-	</header>
 
-	<div id="content">
-		<div ng-view ></div>
-   	</div>
+    <body>
+
+        <header>
+            <h1>Angular JS - Testes</h1>
+            <ul class="menu">			
+                <li>
+                    <a href="#/gabriel">GabrielController</a>
+                </li>
+                <li>
+                    <a href="#/mauricio">Mauricio controller</a>
+                </li>
+                <li>
+                    <a href="#/lucas">Lucas - ToDo List</a>
+                </li>
+            </ul>
+        </header>
+
+        <div id="content">
+            <div ng-view ></div>
+        </div>
     </body>
 </html>
