@@ -1,11 +1,18 @@
 {
-  "name": "angular-poc",
+  "name": "front_end",
   "version": "0.0.1",
-  "description": "Foo project to study angular",
-    "devDependencies" : {
-         "angular" : "1.3.5",
-         "angular-route" : "1.3.5",
-         "connect" : "3.3.4",
-         "serve-static" : "1.9.1"
-    }
+  "description": "Front-end project",
+  "devDependencies" : {
+     "angular" : "1.3.5",
+     "angular-route" : "1.3.5",
+     "connect" : "3.3.4",
+     "serve-static" : "1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brayansdt/crudJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brayansdt/crudJS/issues"
+  }
 }
