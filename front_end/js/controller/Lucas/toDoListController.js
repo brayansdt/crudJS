@@ -2,10 +2,6 @@
  * This is my To Do List Controller, where I´ll put
  * all my controller functions. 
  *
- * Maurício, Brayan, Julio, Gabriel and everyone, look at http://en.wikipedia.org/wiki/JSDoc. 
- * Is better for our project (this :-]) use JSDoc pattern to document all stuff.
- * 01/03/2015 - 19:12
- * 
  * @author Lucas Caixeta
  * @param {$scope} scope is an object that refers to the application model.
  */
@@ -70,6 +66,7 @@ function TodoCtrl($scope) {
         }
 
         var todo = $scope.todos[index];
+        
         /**
         * index + 2 = my item destination.
         * 0 = number of items that I want to remove, anything.
