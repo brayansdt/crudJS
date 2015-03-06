@@ -2,15 +2,17 @@
 <div ng-repeat="todo in todos">
     <input type="checkbox" ng-model="todo.done"/>
     <input type="text" ng-model="todo.text"/>
-    <a href="" ng-click="move($index,'down')">Down</a>
-    <a href="" ng-click="move($index,'up')">Up</a>
-    <a href="" ng-click="removeTodo($index)">Remove</a>
+
+    <img class="icons" src="images/down.png" ng-click="move($index,'down')">  
+    <img class="icons" src="images/up.png" ng-click="move($index,'up')">     
+    <img class="icons" src="images/remove.png" ng-click="removeTodo($index)"> 
+
     <!-- print index of elements -->
-    {{ $index }}
 </div>
 
 <!-- Add a new To Do item on list above -->
 <form ng-submit="addTodo()">
-    <input type="text" ng-model="todoText"/>
-    <input type="submit"/>
+    <input type="text" placeholder="Type new task" ng-model="todoText"/>
+    <br />
+    <input type="submit" id="gobutton"/>
 </form>
